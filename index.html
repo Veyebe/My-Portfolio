@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title> Personal Portfolio | Cameron Ash</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+    <a href="#" class="logo">Portfolio</a>
+    <div class="toggle"></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header> 
+  <section class="banner">
+    <div class="textBx">
+      <h2>Hello, I'm<br><span>Cameron Ash.</span></h2>
+      <h3>Web/Software Developer</h3>
+      <a href="#" class="btn">About me</a>
+   </div>
+ </section>
+ <section class="about"></section>
+  <div class="heading">
+    <h2><b><i>About Me</i></b></h2>
+  </div>
+  <div class="content">
+    <div class="contentBx w50">
+    <h3>Studying Web/Software Development</h3>
+    <p> I have been working in IT for about a year now. I've always had 
+      a passion for technology. <br>I've recently dove into programming and have loved every moment.
+    I'm eager to learn <br>and create my path in software/web development. This website is to show 
+    my projects <br>and give you information about myself. </br> </p>
+   </div>
+   <div class="w50">
+    <img src="img1.jpg" class="img">
+   </div>
+  </div>
+  </section>
+  
+  <section class="projects">
+    <div class="heading white">
+      <h2> <b><i> My Projects</i> </b></h2>
+    </div>
+      <div class="content">
+        <div class="projectsBx">
+        <img src="icon2.png">
+        <h2>Web Development</h2>   
+    </div>
+      <div class="projectsBx">
+        <img src="icon6.png">
+        <h2>Video Editing</h2>   
+    </div>
+    </div>
+    </section>
+  
+  <section class="work">
+    <div class="heading">
+    <h2><b><i>Recent Work</i></b></h2>
+  </div>
+  <div class="content">
+    <div class="workBx">
+    <img src="test1.jpg">
+  </div>
+    <div class="workBx">
+    <img src="test1.jpg">
+  </div>
+    <div class="workBx">
+    <img src="test1.jpg">
+  </div>
+    <div class="workBx">
+    <img src="test1.jpg">
+      </div>
+    </div>
+    <div class="heading">
+      <a href="#" class="btn">View More</a>
+    </div>
+
+  </section>
+  <section class="contact">
+    <div class="heading white">
+    <h2> <i><b>Contact Me</b></i></h2>
+    </div>
+    <div class="content">
+      <div class="contactInfoBx">
+        <h3>Contact Info</h3>
+        <div class="box">
+       <div class="icon">
+        <i class="fa fa-envelope-o"></i>  
+       </div>
+       <div class="text">
+        <h3>Email</h3>
+        <p>ashcameron1227@gmail.com</p>
+      <div class="box">
+        <div class="icon"></div>
+        <i class="fa fa-envelope-o"></i>
+        </div>        
+        <div class="text">
+           <h3>LinkedIn</h3>
+           <p> <a style="color:white"href="https://www.linkedin.com/in/cameron-ash-b71711167/">My Page</a><p>
+       </div>
+       </div>    
+       </div>
+      </div>
+      <div class="formBx">
+        <form>
+          <h3> Message Me</h3>
+          <input type="text" name="" placeholder="Full Name">
+          <input type="email" name="" placeholder="Email">
+          <textarea placeholder="Your Message"></textarea>
+          <input type="sumbit" value="Send">
+          </form>
+      </div>
+    </div>
+  </section>
+<script type="text/javascript">
+  window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+  </script>
+</body>
+</html>
+

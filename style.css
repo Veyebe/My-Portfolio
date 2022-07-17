@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+section
+{
+ padding: 100px;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+        font-size: 2em;
+        color: whitesmoke;
+        font-weight: 500;
+        line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.btn
+{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header
+{
+  position: fixed;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: 0.5s;
+}
+header.sticky
+{
+  background: rgb(11, 59, 132);
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo
+{
+  color: whitesmoke;
+
+}
+header .logo
+{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header ul
+{
+  position: relative;
+  display: flex;
+
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+
+}
+header ul li a
+{
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+header.sticky ul li a 
+{
+  color: whitesmoke;
+}
+.heading
+{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(228, 79, 106);
+}
+.heading h2
+{
+  font-weight: 600;
+  font-size: 30px;
+}
+.content
+{
+  display: flex;
+  justify-content: space-between;
+}
+.contentBx
+{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.contentBx h3
+{
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:rgb(11, 59, 132)
+}
+.w50
+{
+  min-width: 25%;
+}
+img
+{
+  max-width: 100%;
+}
+.projects
+{
+  background: rgb(11, 59, 132);
+}
+.heading.white
+{
+  color: rgb(228, 79, 106);
+}
+.projects .content
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .content .projectsBx
+{
+  padding: 40px 20px;
+  background: rgb(11, 59, 132);
+  color: rgb(255, 255, 255);
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.projects .content .projectsBx:hover
+{
+  background: rgb(228, 79, 106);
+}
+
+.contact
+{
+  background: rgb(11, 59, 132);;
+}
+.formBx
+{
+  min-width: 60%;
+}
+.formBx form
+{
+  display: flex;
+  flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form input textarea
+{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+  color: #999;
+}
+.formBx form input[type="submit"]
+{
+ max-width: 100px;
+ background: #2196f3;
+ cursor: pointer;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+}
+.contactInfo
+{
+    min-width: 40%;
+}
+.contactInfoBx
+{
+  position: relative;
+}
+.contactInfoBx .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contactInfoBx .box
+{
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+contactInfoBx .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
