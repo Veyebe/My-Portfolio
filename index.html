@@ -10,22 +10,24 @@
 <body>
   <header>
     <a href="#" class="logo">Portfolio</a>
-    <div class="toggle"></div>
+    <div class="toggle" onclick="toggleMenu();"></div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
     </ul>
   </header> 
-  <section class="banner">
+  <section class="banner" id="home">
     <div class="textBx">
       <h2>Hello, I'm<br><span>Cameron Ash.</span></h2>
       <h3>Web/Software Developer</h3>
-      <a href="#" class="btn">About me</a>
+      <a href="#about" class="btn">About me</a>
    </div>
  </section>
- <section class="about"></section>
+ <section class="about" id="about">
+
+ </section>
   <div class="heading">
     <h2><b><i>About Me</i></b></h2>
   </div>
@@ -43,7 +45,7 @@
   </div>
   </section>
   
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="heading white">
       <h2> <b><i> My Projects</i> </b></h2>
     </div>
@@ -59,7 +61,7 @@
     </div>
     </section>
   
-  <section class="work">
+  <section class="work" id="work">
     <div class="heading">
     <h2><b><i>Recent Work</i></b></h2>
   </div>
@@ -82,7 +84,7 @@
     </div>
 
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="heading white">
     <h2> <i><b>Contact Me</b></i></h2>
     </div>
@@ -107,15 +109,15 @@
        </div>    
        </div>
       </div>
-      <div class="formBx">
+      <div class="formBx" id="formBx">
         <form>
           <h3> Message Me</h3>
           <input type="text" name="" placeholder="Full Name">
           <input type="email" name="" placeholder="Email">
           <textarea placeholder="Your Message"></textarea>
-          <input type="sumbit" value="Send">
+          <input type="submit" value="Submit">
           </form>
-      </div>
+        </div>
     </div>
   </section>
 <script type="text/javascript">
@@ -123,6 +125,13 @@
     var header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
   });
+
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
   </script>
 </body>
 </html>
